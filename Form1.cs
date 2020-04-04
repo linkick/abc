@@ -16,7 +16,7 @@ namespace Question1
         public Form1()
         {
             InitializeComponent();
-
+            int i=0;
             DataTable dt = DAO.GetDataTable("SELECT member_no, firstname, lastname, region_name" +
                 " FROM member m, region r" +
                 " WHERE m.region_no = r.region_no");
