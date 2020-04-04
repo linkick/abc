@@ -20,7 +20,7 @@ namespace Question1
             DataTable dt = DAO.GetDataTable("SELECT member_no, firstname, lastname, region_name" +
                 " FROM member m, region r" +
                 " WHERE m.region_no = r.region_no");
-
+            int a =1;
             dataGridView1.DataSource = dt;
             dt.Columns[0].ColumnName = "Member ID";
             dt.Columns[3].ColumnName = "Region name";
